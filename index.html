@@ -102,7 +102,7 @@
             margin: 0px;
 
         }
-        
+
         h1 {
             font-size: 22pt;
         }
@@ -140,12 +140,6 @@
             text-decoration: underline;
         }
 
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-
         a:hover {
             opacity: 40%;
         }
@@ -154,9 +148,14 @@
             opacity: 10%;
             text-decoration: line-through;
         }
-
-        .nav-link {
+        
+        a {
+            text-decoration: none;
             color: white;
+        }
+        
+        .nav-link {
+            color: red;
         }
 
         .section {
@@ -167,7 +166,7 @@
             max-width: 1200px;
         }
 
-        @media only screen and (min-width: 768px) {}
+        @media only screen and (min-width: 1000px) {}
 
     </style>
 
@@ -191,6 +190,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     <!--Side Bar Nav Section-->
+
+    <!-- Skelly's Code from codeply-->
+    <nav class="navbar navbar-expand-lg navbar-dark p-50 bg-dark">
+        <div class="container-fluid">
+            <a class="display1 navbar-brand" id="heading" href="#">
+                lift Gym
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="h4 navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active ml-5 mr-5" aria-current="page" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-5 mr-5" href="#">
+                            about us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-5 mr-5" href="#">
+                            Pricing
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-5 mr-3" href="#">
+                            contact us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Ellie's Code
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top p-0 px-4 px-lg-5">
+        <a href=index.html class="navbar-brand d-flex align-items-center">
+            <h2 class="m-0">
+                art_by_janiah
+            </h2>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar=toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-4 py-lg-0">
+            </div>
+        </div>
+    </nav>-->
+
+
+    <!--Left Side Navbar
     <nav class="container-fluid">
         <section class="row flex-nowrap">
             <section class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
@@ -207,292 +261,418 @@
                             </a>
                         </li>
                         <br>
-                        <br>
-                        <li>
-                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
-                            <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1 </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
-                        </li>
-                        <li>
-                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Bootstrap</span></a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 3</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 4</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#contact" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-people"></i>
-                                <span class="ms-1 d-none d-sm-inline">
-                                    Contact
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-            </section>
+                        <br>-->
 
-            <!--Main Section-->
-            <div class="col py-3">
+    <!--3D Nav
+    <li>
+        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">3D</span></a>
+        <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+            <li class="w-100">
+                <a href="#3DP1" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 1</a>
+            </li>
+            <li>
+                <a href="#3DP2" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 2</a>
+            </li>
+            <li>
+                <a href="#3DP3" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 3</a>
+            </li>
+            <li>
+                <a href="#3DP4" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 4</a>
+            </li>
+            <li>
+                <a href="#3DP5" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 5</a>
+            </li>
+            <li>
+                <a href="#3DP6" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 6</a>
+            </li>
+            <li>
+                <a href="#3DP7" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 7</a>
+            </li>
+            <li>
+                <a href="#3DP8" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 8</a>
+            </li>
+            <li>
+                <a href="#3DP9" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 9</a>
+            </li>
+            <li>
+                <a href="#3DP10" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 10</a>
+            </li>
+        </ul>
+    </li>-->
 
-                <!--3D Section-->
-                <div class="container" id="3D">
-                    <h4>
-                        3D Work
-                    </h4>
-                    <p>
-                        A collection of 3D environments, characters, and prop models. Softwares used include Autodesk Maya, Blender, Arnold, Substance Painter, Zbrush, and Unreal Engine.
-                    </p>
+    <!--Graphic Nav
+    <li>
+        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Graphic Design</span></a>
+        <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+            <li class="w-100">
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 1</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 2</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 3</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 4</a>
+            </li>
+        </ul>
+    </li>-->
 
-                    <section>
-                        <div class="row">
-                            <div class="col-12">
-                                <a href="#" data-caption="This describes the image">
-                                    <img id="3DP1">
-                                    <div id="carouselExampleIndicators" class="carousel slide">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                                        </div>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <a href="pier_exterior_nighttime_render.jpg">
-                                                    <img src="pier_exterior_nighttime_render.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <a href="pier_exterior_daytime_render.jpg">
-                                                    <img src="pier_exterior_daytime_render.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <a href="Screenshot%202022-12-01%20at%2010.00.31%20PM%20(1).png">
-                                                    <img src="Screenshot%202022-12-01%20at%2010.00.31%20PM%20(1).png">
-                                                </a>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <a href="#">
-                                                    <img src="Screenshot%202022-12-01%20at%209.43.43%20PM%20(1).png" class="d-block w-100" alt="...">
-                                                </a>
+    <!--Ilustration Nav
+    <li>
+        <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+            <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Illustrations</span> </a>
+        <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+            <li class="w-100">
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 1</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 2</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 3</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 4</a>
+            </li>
+        </ul>
+    </li>-->
 
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="Screenshot%202022-12-01%20at%209.45.05%20PM.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="Screenshot%202022-12-01%20at%209.45.10%20PM.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="Screenshot%202022-12-02%20at%2012.19.56%20PM.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="IMG_8657.PNG" class="d-block w-100" alt="...">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
+    <!--Traditional Nav
+    <li>
+        <a href="#submenu4" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+            <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Traditional</span> </a>
+        <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#menu">
+            <li class="w-100">
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 1</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 2</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 3</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Project</span> 4</a>
+            </li>
+        </ul>
+    </li>-->
+
+    <!--About Nav
+    <li>
+        <a href="#about" class="nav-link px-0 align-middle">
+            <i class="fs-4 bi-people"></i>
+            <span class="ms-1 d-none d-sm-inline">
+                About
+            </span>
+        </a>
+    </li>
+
+    <!--Contact Nav
+    <li>
+        <a href="#contact" class="nav-link px-0 align-middle">
+            <i class="fs-4 bi-people"></i>
+            <span class="ms-1 d-none d-sm-inline">
+                Contact
+            </span>
+        </a>
+    </li>
+    </ul>
+    </section>
+    </section>-->
+
+    <!--Main Section-->
+    <div class="col py-3">
+
+        <!--3D Section-->
+        <div class="container" id="3D">
+            <h4>
+                3D Work
+            </h4>
+            <p>
+                A collection of 3D environments, characters, and prop models. Softwares used include Autodesk Maya, Blender, Arnold, Substance Painter, Zbrush, and Unreal Engine.
+            </p>
+
+
+            <section>
+                <div class="row">
+                    <!-- Dock Office-->
+                    <div class="col-12">
+                        <a href="pier_exterior_nighttime_render.jpg" data-caption="This describes the image">
+                            <img id="3DP1">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <a href="pier_exterior_nighttime_render.jpg">
+                                            <img src="pier_exterior_nighttime_render.jpg">
+                                        </a>
                                     </div>
-                                </a>
-                                <h5>
-                                    The Dock Office
-                                </h5>
+                                    <div class="carousel-item">
+                                        <a href="pier_exterior_daytime_render.jpg">
+                                            <img src="pier_exterior_daytime_render.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="Screenshot%202022-12-01%20at%2010.00.31%20PM%20(1).png">
+                                            <img src="Screenshot%202022-12-01%20at%2010.00.31%20PM%20(1).png">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="#">
+                                            <img src="Screenshot%202022-12-01%20at%209.43.43%20PM%20(1).png" class="d-block w-100" alt="...">
+                                        </a>
+
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Screenshot%202022-12-01%20at%209.45.05%20PM.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Screenshot%202022-12-01%20at%209.45.10%20PM.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Screenshot%202022-12-02%20at%2012.19.56%20PM.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="IMG_8657.PNG" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </a>
+                        <h5>
+                            The Dock Office - 2021
+                        </h5>
+                    </div>
+
+
+
+
+                    <!-- Rau Haus-->
+                    <div class="col-12">
+                        <a href="product1.jpg" data-toggle="lightbox" data-caption="This describes the image">
+                            <img id="3DP2" src="product1.jpg" class="img-fluid">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <a href="pier_exterior_nighttime_render.jpg">
+                                            <img src="pier_exterior_nighttime_render.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="pier_exterior_daytime_render.jpg">
+                                            <img src="pier_exterior_daytime_render.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="Screenshot%202022-12-01%20at%2010.00.31%20PM%20(1).png">
+                                            <img src="Screenshot%202022-12-01%20at%2010.00.31%20PM%20(1).png">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="#">
+                                            <img src="Screenshot%202022-12-01%20at%209.43.43%20PM%20(1).png" class="d-block w-100" alt="...">
+                                        </a>
+
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Screenshot%202022-12-01%20at%209.45.05%20PM.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Screenshot%202022-12-01%20at%209.45.10%20PM.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Screenshot%202022-12-02%20at%2012.19.56%20PM.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="IMG_8657.PNG" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
 
-                            <div class="col-12 col-md-6">
-                                <a href="product1.jpg" data-toggle="lightbox" data-caption="This describes the image">
-                                    <img id="3DP2" src="product1.jpg" class="img-fluid">
-                                </a>
-                                <h5>
-                                    The Rau Haus (Senior Project) - Coming Soon
-                                </h5>
-                            </div>
+                        </a>
+                        <h5>
+                            The Rau Haus (Senior Project) - 2024
+                        </h5>
+                    </div>
 
-                            <div class="col-12 col-md-6">
-                                <a href="product1.jpg" data-toggle="lightbox" data-caption="This describes the image">
-                                    <img id="3DP3" src="product1.jpg" class="img-fluid">
-                                </a>
-                                <h5>
-                                    The Corporate Office
-                                </h5>
-                            </div>
+                    <div class="col-12 col-md-6">
+                        <a href="#" data-toggle="lightbox" data-caption="This describes the image">
+                            <img id="3DP3" src="product1.jpg" class="img-fluid">
+                        </a>
+                        <h5>
+                            The Corporate Office - 2024
+                        </h5>
+                    </div>
 
-                            <div class="col-12 col-md-6">
-                                <a href="product1.jpg" data-toggle="lightbox" data-caption="This describes the image">
-                                    <img id="3DP4" src="product1.jpg" class="img-fluid">
-                                </a>
-                                <h5>
-                                    The Grand Suite
-                                </h5>
-                            </div>
+                    <div class="col-12 col-md-6">
+                        <a href="product1.jpg" data-toggle="lightbox" data-caption="This describes the image">
+                            <img id="3DP4" src="product1.jpg" class="img-fluid">
+                        </a>
+                        <h5>
+                            The Grand Suite - 2023
+                        </h5>
+                    </div>
 
-                            <div class="col-12 col-md-6">
-                                <a href="product1.jpg" data-toggle="lightbox" data-caption="This describes the image">
-                                    <img id="3DP5" src="product1.jpg" class="img-fluid">
-                                </a>
-                                <h5>
-                                    The Bedroom
-                                </h5>
-                            </div>
+                    <div class="col-12 col-md-6">
+                        <a href="product1.jpg" data-toggle="lightbox" data-caption="This describes the image">
+                            <img id="3DP5" src="product1.jpg" class="img-fluid">
+                        </a>
+                        <h5>
+                            The Bedroom - 2022
+                        </h5>
+                    </div>
 
-                            <div class="col-12 col-md-6">
-                                <a href="product1.jpg" data-toggle="lightbox" data-caption="This describes the image">
-                                    <img id="3DP6" src="product1.jpg" class="img-fluid">
-                                </a>
-                                <h5>
-                                    The Apartment
-                                </h5>
-                            </div>
+                    <div class="col-12 col-md-6">
+                        <a href="product1.jpg" data-toggle="lightbox" data-caption="This describes the image">
+                            <img id="3DP6" src="product1.jpg" class="img-fluid">
+                        </a>
+                        <h5>
+                            The Apartment - 2021
+                        </h5>
+                    </div>
 
-                            <div class="col-12 col-md-6">
-                                <a href="product1.jpg" data-toggle="lightbox" data-caption="This describes the image">
-                                    <img id="3DP7" src="product1.jpg" class="img-fluid">
-                                </a>
-                                <h5>
-                                    The Spaceship
-                                </h5>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <a href="product1.jpg" data-toggle="lightbox" data-caption="This describes the image">
-                                    <img id="3DP8" src="product1.jpg" class="img-fluid">
-                                </a>
-                                <h5>
-                                    The Robot
-                                </h5>
-                            </div>
+                    <div class="col-12 col-md-6">
+                        <a href="product1.jpg" data-toggle="lightbox" data-caption="This describes the image">
+                            <img id="3DP7" src="product1.jpg" class="img-fluid">
+                        </a>
+                        <h5>
+                            The Spaceship - 2021
+                        </h5>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <a href="product1.jpg" data-toggle="lightbox" data-caption="This describes the image">
+                            <img id="3DP8" src="product1.jpg" class="img-fluid">
+                        </a>
+                        <h5>
+                            The Robot - 2023
+                        </h5>
+                    </div>
 
-                            <div class="col-12 col-md-6">
-                                <a href="product1.jpg" data-toggle="lightbox" data-caption="This describes the image">
-                                    <img id="3DP9" src="product1.jpg" class="img-fluid">
-                                </a>
-                                <h5>
-                                    Torso Model
-                                </h5>
-                            </div>
+                    <div class="col-12 col-md-6">
+                        <a href="product1.jpg" data-toggle="lightbox" data-caption="This describes the image">
+                            <img id="3DP9" src="product1.jpg" class="img-fluid">
+                        </a>
+                        <h5>
+                            Torso Model - 2023
+                        </h5>
+                    </div>
 
-                            <div class="col-12 col-md-6">
-                                <a href="product1.jpg" data-toggle="lightbox" data-caption="This describes the image">
-                                    <img id="3DP10" src="product1.jpg" class="img-fluid">
-                                </a>
-                                <h5>
-                                    Hand Model
-                                </h5>
-                            </div>
-                        </div>
-                    </section>
-                    <br>
-                </div>
-
-
-                <!--About Section-->
-                <div class="col py-3">
-
-                    <div class="container" id="about">
-                        <h4>
-                            Bio
-                        </h4>
-                        <p>
-                            Click <a href="resume.pdf">
-                                <p2>Here</p2>
-                            </a> to view and download resume.
-                        </p>
-                        <p class="col-12 col-6">
-                            I am a junior 3D modeler with a focus on environment and prop design.
-                            <br>
-                            <br>
-                            I want to help design studios create worlds that give their audience an immersive experience.
-                            <br>
-                            <br>
-                            Eager to learn 3D modeler that wants to help studios bring their visions to life. Project-oriented thinker that enjoys the proces of taking a concept and transforming into a finished render. Team player that understands the importance of collaboration and can also work independently depending on the needs of a project. Designer that always embraces feedback and takes direction to create better scenes.
-                            <br>
-                            <br>
-                            I believe that a well-designed environment sets the stage for a great visual experience.
-                        </p>
+                    <div class="col-12 col-md-6">
+                        <a href="product1.jpg" data-toggle="lightbox" data-caption="This describes the image">
+                            <img id="3DP10" src="product1.jpg" class="img-fluid">
+                        </a>
+                        <h5>
+                            Hand Model - 2023
+                        </h5>
                     </div>
                 </div>
+            </section>
+            <br>
+        </div>
 
 
-                <!--Contact Form Section-->
-                <div class="col py-3">
-                    <form class="container">
-                        <div id="contact">
-                            <h4>
-                                Contact
-                            </h4>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col">
-                                        <input type="text" class="form-control" placeholder="First Name*">
-                                    </div>
-                                    <div class="col">
-                                        <input type="text" class="form-control" placeholder="Last Name*">
-                                    </div>
-                                    <br>
-                                    <br>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email Address*">
-                                </div>
-                                <br>
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="3" placeholder="Subject"></textarea>
-                                </div>
-                                <br>
-                                <div class="form-group">
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message*"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn primary" style="color:white">Submit Here</button>
+        <!--About Section-->
+        <div class="col py-3">
+
+            <div class="container" id="about">
+                <h4>
+                    Bio
+                </h4>
+                <p>
+                    Click <a href="resume.pdf">
+                        <p2>Here</p2>
+                    </a> to view and download resume.
+                </p>
+                <p class="col-12 col-6">
+                    I am a junior 3D modeler with a focus on environment and prop design.
+                    <br>
+                    <br>
+                    I want to help design studios create worlds that give their audience an immersive experience.
+                    <br>
+                    <br>
+                    Eager to learn 3D modeler that wants to help studios bring their visions to life. Project-oriented thinker that enjoys the proces of taking a concept and transforming into a finished render. Team player that understands the importance of collaboration and can also work independently depending on the needs of a project. Designer that always embraces feedback and takes direction to create better scenes.
+                    <br>
+                    <br>
+                    I believe that a well-designed environment sets the stage for a great visual experience.
+                </p>
+            </div>
+        </div>
+
+
+        <!--Contact Form Section-->
+        <div class="col py-3">
+            <form class="container">
+                <div id="contact">
+                    <h4>
+                        Contact
+                    </h4>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First Name*">
                             </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last Name*">
+                            </div>
+                            <br>
+                            <br>
                         </div>
-                    </form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Email Address*">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" placeholder="Subject"></textarea>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message*"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn primary" style="color:white">Submit Here</button>
+                    </div>
                 </div>
+            </form>
+        </div>
 
-                <!--Carousel Section
+        <!--Carousel Section
                 <div id="carouselExampleIndicators" class="carousel slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -518,10 +698,9 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                </div>
-                -->
-            </div>
-    </nav>
+                </div>-->
+    </div>
+    </section>
     </nav>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
