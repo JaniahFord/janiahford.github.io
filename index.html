@@ -126,6 +126,16 @@
             color: white;
 
             margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        h6 {
+            font-family: Lato;
+            font-size: 14pt;
+            font-weight: 400;
+            color: white;
+
+            margin-top: 10px;
             margin-bottom: 70px;
         }
 
@@ -163,21 +173,37 @@
         }
 
         a:hover {
-            opacity: 30%;
-            color: black;
-        }
-
-        a:visited {
-            text-decoration: none;
-            color: white;
+            opacity: 50%;
         }
 
         .navbar {
-            position: fixed !important;
+            position: fixed;
+            background-color: black;
+        }
+
+        .navbar-brand {
+            color: white;
+            font-size: 22pt;
+        }
+
+        .navbar-nav {
+            color: white;
         }
 
         .nav-link {
             color: white;
+        }
+
+        .nav-link active {
+            color: white;
+        }
+
+        .navbar-toggler {
+            background-color: white;
+        }
+
+        li {
+            font-size: 18pt;
         }
 
         .form-group {
@@ -212,6 +238,13 @@
 
         .icon {
             width: 30px;
+        }
+
+        .btn {
+            border-color: white;
+            border-style: solid;
+            background-color: black;
+            color: white;
         }
 
         @media only screen and (min-width: 1000px) {
@@ -250,10 +283,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
 
-
-    <!--Side Bar Nav Section-->
-
-    <!-- Skelly's Code from codeply-->
+    <!--Skelly's Code from codeply
     <nav class="navbar navbar-expand-lg navbar-dark p-1000 bg-dark">
         <div class="container-fluid">
             <a class="display1 navbar-brand" id="heading" href="#">
@@ -282,7 +312,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav>-->
 
     <!--Ellie's Code
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top p-0 px-4 px-lg-5">
@@ -319,7 +349,49 @@
                         <br>
                         <br>-->
 
-    <!--Main Section-->
+    <!--New Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                art_by_janiah
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#3D">
+                            3D
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/janiah-ford-968089121/">
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/art_by_janiah/">
+                            Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Main Page Section-->
     <div class="col py-3">
         <div class="container">
             <a class="container" id="top"></a>
@@ -337,7 +409,7 @@
                 3D Work
             </h4>
             <p>
-                A collection of 3D environments, characters, and prop models.
+                A collection of environments, characters, and prop models.
                 <br>
                 Softwares used include Autodesk Maya, Blender, Arnold, Substance Painter, Zbrush, and Unreal Engine 4.
             </p>
@@ -368,7 +440,7 @@
                             <img id="#" src="rau%20haus%2003.jpg" class="img-fluid">
                         </a>
                     </div>
-                      <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6">
                         <br>
                         <a href="rau%20haus%2002.jpg" data-toggle="lightbox" data-caption="">
                             <img id="#" src="rau%20haus%2002.jpg" class="img-fluid">
@@ -380,10 +452,14 @@
                             <img id="#" src="rau%20haus%2004.jpg" class="img-fluid">
                         </a>
                     </div>
-                    <h5>
+                    <h5 class="col-12 col-md-6">
                         <br>
                         The Rau Haus (Senior Project) - 2024
                     </h5>
+                    <h6 class="col-12 col-md-6">
+                        <br>
+                        This environment was inspired by Feldman Architecture's "Rau Haus" design constructed in 2023, located in Portola Valley, US.
+                    </h6>
 
                     <div class="col-12">
                         <a href="pier_exterior_nighttime_render.jpg" data-toggle="lightbox" data-caption="">
@@ -391,93 +467,194 @@
                         </a>
                     </div>
                     <div class="col-12">
-                        <a href="pier_exterior_daytime_render.jpg" data-toggle="lightbox" data-caption="">
-                            <img id="3DP2" src="pier_exterior_daytime_render.jpg" class="img-fluid">
+                        <a href="dock%20office%20night.jpg" data-toggle="lightbox" data-caption="">
+                            <img id="3DP2" src="dock%20office%20night.jpg" class="img-fluid">
+                        </a>
+                        <a href="dock%20office%20day.jpg" data-toggle="lightbox" data-caption="">
+                            <img id="3DP2" src="dock%20office%20day.jpg" class="img-fluid">
                         </a>
                     </div>
-                    <h5>
+                    <div class="col-12 col-md-6">
                         <br>
-                        The Docks Office - 2021
+                        <a href="dock%20office%2001.png" data-toggle="lightbox" data-caption="">
+                            <img id="#" src="dock%20office%2001.png" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <br>
+                        <a href="dock%20office%2002.png" data-toggle="lightbox" data-caption="">
+                            <img id="#" src="dock%20office%2002.png" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <br>
+                        <a href="dock%20office%2003.png" data-toggle="lightbox" data-caption="">
+                            <img id="#" src="dock%20office%2003.png" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <br>
+                        <a href="dock%20office%2004.png" data-toggle="lightbox" data-caption="">
+                            <img id="#" src="dock%20office%2004.png" class="img-fluid">
+                        </a>
+                    </div>
+                    <h5 class="col-12 col-md-6">
+                        <br>
+                        The Dock Office - 2021
                     </h5>
+                    <h6 class="col-12 col-md-6">
+                        <br>
+                        This exterior was inspired by the work of 3D artist Weitao Sun, found on ArtStation.
+                    </h6>
 
                     <div class="col-12">
                         <a href="JFordFinalLevel.mp4" data-toggle="lightbox" data-caption="">
                             <video id="3DP3" src="JFordFinalLevel.mp4" class="img-fluid"></video>
                         </a>
-                        <h5>
-                            <br>
-                            The Corporate Office - 2024
-                        </h5>
                     </div>
+                    <h5 class="col-12 col-md-6">
+                        <br>
+                        The Corporate Office - 2023
+                    </h5>
+                    <h6 class="col-12 col-md-6">
+                        <br>
+                        This interior was inspired by the typical, everyday modern office, with a bleaker, grayer, almost lifeless aesthetic.
+                    </h6>
 
                     <div class="col-12">
-                        <a href="Snapshot_06_Background_Removed.jpg" data-toggle="lightbox" data-caption="">
-                            <img id="3DP4" src="Snapshot_06_Background_Removed.jpg" class="img-fluid">
+                        <a href="grand%20suite%2001_Background_Removed.jpg" data-toggle="lightbox" data-caption="">
+                            <img id="3DP4" src="grand%20suite%2001_Background_Removed.jpg" class="img-fluid">
                         </a>
-                        <h5>
-                            <br>
-                            The Grand Suite - 2023
-                        </h5>
                     </div>
+                    <div class="col-12">
+                        <br>
+                        <a href="grand%20suite%2005.png" data-toggle="lightbox" data-caption="">
+                            <img id="3DP4" src="grand%20suite%2005.png" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <br>
+                        <a href="grand%20suite%2002.png" data-toggle="lightbox" data-caption="">
+                            <img id="3DP4" src="grand%20suite%2002.png" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <br>
+                        <a href="grand%20suite%2003.png" data-toggle="lightbox" data-caption="">
+                            <img id="3DP4" src="grand%20suite%2003.png" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <br>
+                        <a href="grand%20suite%2004.png" data-toggle="lightbox" data-caption="">
+                            <img id="3DP4" src="grand%20suite%2004.png" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <br>
+                        <a href="grand%20suite%2006.png" data-toggle="lightbox" data-caption="">
+                            <img id="3DP4" src="grand%20suite%2006.png" class="img-fluid">
+                        </a>
+                    </div>
+                    <h5 class="col-12 col-md-6">
+                        <br>
+                        The Grand Suite - 2023
+                    </h5>
+                    <h6 class="col-12 col-md-6">
+                        <br>
+                        This interior was inspired by Japanese architect Yasushi Horibe's "Grand Suite", a hotel room located on the floating hotel ship "Guntû", that travels in the Seto Inland Sea.
+                    </h6>
 
                     <div class="col-12">
                         <a href="bedroom_render_01.jpeg" data-toggle="lightbox" data-caption="">
                             <img id="3DP5" src="bedroom_render_01.jpeg" class="img-fluid">
                         </a>
-                        <h5>
-                            <br>
-                            The Bedroom - 2022
-                        </h5>
                     </div>
+                    <div class="col-12 col-md-6">
+                        <br>
+                        <a href="bedroom_render_02.jpeg" data-toggle="lightbox" data-caption="">
+                            <img id="3DP5" src="bedroom_render_02.jpeg" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <br>
+                        <a href="bedroom_render_03.jpeg" data-toggle="lightbox" data-caption="">
+                            <img id="3DP5" src="bedroom_render_03.jpeg" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <br>
+                        <a href="bedroom_render_04.jpeg" data-toggle="lightbox" data-caption="">
+                            <img id="3DP5" src="bedroom_render_04.jpeg" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <br>
+                        <a href="bedroom_render_05.jpeg" data-toggle="lightbox" data-caption="">
+                            <img id="3DP5" src="bedroom_render_05.jpeg" class="img-fluid">
+                        </a>
+                    </div>
+                    <h5 class="col-12 col-md-6">
+                        <br>
+                        The Bedroom - 2022
+                    </h5>
+                    <h6 class="col-12 col-md-6">
+                        <br>
+                        This interior was inspired by a simple, modern bedroom, using darker lighting for asethetic purposes.
+                    </h6>
 
                     <div class="col-12">
                         <a href="Snapshot_5.jpeg" data-toggle="lightbox" data-caption="">
                             <img id="3DP6" src="Snapshot_5.jpeg" class="img-fluid">
                         </a>
-                        <h5>
-                            <br>
-                            The Apartment - 2021
-                        </h5>
                     </div>
+                    <h5 class="col-12 col-md-6">
+                        <br>
+                        The Apartment - 2021
+                    </h5>
+                    <h6 class="col-12 col-md-6">
+                        <br>
+                        This interior was inspired by
+                    </h6>
 
                     <div class="col-12">
                         <a href="spaceship_render_test_03_denoised.jpeg" data-toggle="lightbox" data-caption="">
                             <img id="3DP7" src="spaceship_render_test_03_denoised.jpeg" class="img-fluid">
                         </a>
-                        <h5>
-                            <br>
-                            The Spaceship - 2021
-                        </h5>
                     </div>
+                    <h5 class="col-12 col-md-6">
+                        <br>
+                        The Spaceship - 2021
+                    </h5>
+                    <h6 class="col-12 col-md-6">
+                        <br>
+                        This prop model was inspired by
+                    </h6>
+
                     <div class="col-12">
                         <a href="robot_render_03.jpg" data-toggle="lightbox" data-caption="">
                             <img id="3DP8" src="robot_render_03.jpg" class="img-fluid">
                         </a>
-                        <h5>
-                            <br>
-                            The Robot - 2023
-                        </h5>
                     </div>
-
                     <div class="col-12 col-md-6">
                         <a href="torso_test_render_01.jpg" data-toggle="lightbox" data-caption="">
                             <img id="3DP9" src="torso_test_render_01.jpg" class="img-fluid">
                         </a>
-                        <h5>
-                            <br>
-                            Torso Model - 2023
-                        </h5>
                     </div>
-
                     <div class="col-12 col-md-6">
                         <a href="hand_test_render_01.jpg" data-toggle="lightbox" data-caption="">
                             <img id="3DP10" src="hand_test_render_01.jpg" class="img-fluid">
                         </a>
-                        <h5>
-                            <br>
-                            Hand Model - 2023
-                        </h5>
                     </div>
+                    <h5 class="col-12 col-md-6">
+                        <br>
+                        The Robot - 2023
+                    </h5>
+                    <h6 class="col-12 col-md-6">
+                        <br>
+                        This character was inspired by
+                    </h6>
+
                 </div>
             </section>
             <br>
@@ -493,9 +670,9 @@
                 </h4>
                 <div class="col-md-6">
                     <p>
-                        Click<a href="resume.pdf">
-                            <p3>Here</p3>
-                        </a>to view and download my resume.
+                        Click<a href="JaniahFordResume2024.pdf">
+                            Here
+                        </a> to view and download my resume.
                     </p>
                     <br>
                     <p>
@@ -517,7 +694,7 @@
             </div>
         </div>
 
-        <!--Contact Form Section-->
+        <!--Contact Section-->
         <div class="col py-3">
             <form class="container">
                 <div id="contact" class=row>
@@ -541,16 +718,43 @@
                             <br>
                         </p>
                         <p>
-                            Linkedin:
-                            <a href="https://www.linkedin.com/in/janiah-ford-968089121/">
-                                <img class="icon" src="6bab3017350ca04c6fa05569672bd31e.jpg">
+                            <a href="https://www.linkedin.com/in/janiah-ford-968089121/">LinkedIn
                             </a>
-
+                            <a href="https://www.instagram.com/art_by_janiah/">Instagram
+                            </a>
+                            <br>
                             <br>
                         </p>
                     </div>
                 </div>
 
+                <!--New Contact Form-->
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First Name*" aria-label="First Name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last Name*" aria-label="Last Name">
+                    </div>
+                </div>
+                <br>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Email*" aria-label="Email">
+                </div>
+                <br>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Message" aria-label="Message">
+                </div>
+                <br>
+                <div class="row-auto">
+                    <button type="submit" class="btn btn-primary">
+                        Submit Here
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!--Old Contact Form
                 <div class=" form-group">
                     <div class="row">
                         <div class="col">
@@ -573,18 +777,16 @@
                     <div class="form-group">
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message*"></textarea>
                     </div>
-                    <button class="submit-button">Submit Here</button>
-                </div>
-            </form>
-        </div>
-
-        <!--Back To Top Section-->
-        <div class="container3">
-            <br>
-            <br>
-            <a href="#top" class=top-button>Back to Top of Page</a>
-        </div>
+                    <input type="submit" value="Submit">
+                    <!--<button class="submit-button">Submit Here</button>-->
     </div>
+
+    <!--Back To Top Section
+    <div class="container3">
+        <br>
+        <br>
+        <a href="#top" class=top-button>Back to Top of Page</a>
+    </div>-->
 
     <!--Carousel Section
                 <div id="carouselExampleIndicators" class="carousel slide">
